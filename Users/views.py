@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from rest_framework import viewsets
-from .models import User, UserAccount
+from django.contrib.auth.models import User
+from .models import UserAccount
 from .serializers import UserSerializer, UserAccountSerializer
 
 class UserViewSet(viewsets.ModelViewSet):
